@@ -165,24 +165,24 @@ while True:
     # If the player reaches score 6, increase difficulty (Level 2)
     if score >= 6 and level == 1:
         level = 2
-        PIPE_VELOCITY = 5  # Keep pipe speed the same for Level 2
-        PIPE_GAP = 150  # Make the gap narrower in Level 2
-        GRAVITY = 0.7  # Make the ball fall faster (slightly increased gravity)
+        PIPE_VELOCITY = 5  
+        PIPE_GAP = 150  
+        GRAVITY = 0.7  
 
     # If the player reaches score 12, increase difficulty (Level 3)
     if score >= 12 and level == 2:
         level = 3
         PIPE_VELOCITY = 6
-        PIPE_GAP = 120  # Make the pipe gap even smaller in Level 3
-        GRAVITY = 0.8  # Increase gravity (fall speed) further for Level 3
+        PIPE_GAP = 120  
+        GRAVITY = 0.8 
 
     # Choose pipe color based on level
     if level == 1:
-        PIPE_COLOR = (0, 0, 255)  # Blue pipes for Level 1
+        PIPE_COLOR = (0, 0, 255)  
     elif level == 2:
-        PIPE_COLOR = (0, 255, 0)  # Green pipes for Level 2
+        PIPE_COLOR = (0, 255, 0)  
     elif level == 3:
-        PIPE_COLOR = (255, 0, 0)  # Red pipes for Level 3
+        PIPE_COLOR = (255, 0, 0)  
 
     # Fill screen with background image
     screen.blit(background, (0, 0))  # Draw the background image
